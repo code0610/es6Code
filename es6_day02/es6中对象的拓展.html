@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //es6中对象的拓展
+          //1.es6中对象的属性简写   当对象外部声明的变量名和要赋值的属性名相同  这个属性可以简写
+        //   let name = "zhou";
+        //   let age = 18;
+        //   const obj = {
+        //       name,
+        //       age
+        //   }
+        //   console.log(obj.name);
+         //2.es6对象中方法的缩写  
+            //  const obj = {
+            //     name,
+            //     age,
+            //     //es5中对象方法的写法
+            //     // run:function(){
+
+            //     // }
+            //     //es6中的简写
+            //     run(){
+            //         console.log(this.name);
+            //     }
+            //  }
+
+            //  obj.run();
+         //3.es6对象中属性名表达式  
+         let age = "age1";
+         const obj = {
+             name:"周一",
+             [age+'abc']:19
+         }
+
+         console.log(obj.age1abc);
+
+          
+             
+
+    
+    
+    </script>
+</body>
+</html>

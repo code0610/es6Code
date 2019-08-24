@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+
+    </table>
+
+
+    <script>
+        //es6中字符串的拓展
+          //1.模块字符串
+             //  定义:` `
+             //  模块字符串中写js代码   ${}
+
+          const users = [
+              {name:"周一",age:18},
+              {name:"周二",age:19},
+              {name:"周三",age:20}
+          ];
+
+            let _tr = "";
+            //es5中的写法
+        //   for(var i = 0;i<users.length;i++){
+        //       _tr += "<tr>"
+        //         _tr += "<td>"+users[i].name+"</td>";
+        //         _tr += "<td>"+users[i].age+"</td>";
+        //       _tr += "</tr>"
+        //   }
+            //es6中模块字符串的写法
+            for(let i = 0;i<users.length;i++){
+                _tr += `<tr><td>${users[i].name}</td>
+                    <td>${users[i].age}</td></tr>
+                `;
+            }
+
+          document.getElementsByTagName("table")[0].innerHTML = _tr;
+    
+    </script>
+</body>
+</html>
