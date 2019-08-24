@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //es5中存储多个数据   只能使用数组
+        //es6中拓展了set和map存储数据的方法
+
+        //est中的set存储数据的方法  
+            //set中的存储值是唯一了，没有重复的值，没有顺序   
+            // let users = new Set([1,2,3]);//直接赋值
+                let users = new Set();
+                //add  向set集合中添加一个值
+                users.add("a");
+                users.add("b");
+                users.add("c");
+                users.add("b");
+
+                //delete  删除一个值
+                // users.delete("a");
+
+                // //clear   清空集合中所有的值
+                // // users.clear();
+
+                // //has   判断集合中有没有某一个值 
+                // console.log(users.has("c"));
+
+
+                // //size   集合中元素的个数 
+                // console.log(users.size);  
+                // console.log(users);
+
+                //遍历set集合   
+                    //1.for of  遍历 
+                        for(let x of users){
+                            console.log(x);
+                        }
+                    //2.foreach  遍历 
+                        users.forEach((a,b)=>{//在set中没有下标   a,b参数都是值   
+                            console.log(a,b);
+                        });
+
+                
+       
+    
+    
+    </script>
+</body>
+</html>

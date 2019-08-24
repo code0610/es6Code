@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //Map    存储的数据  都是以键-值对的形式存储的  
+        let users = new Map();
+        //添加和修改数据
+        users.set("a","1");
+        users.set("b","2");
+        users.set("c","3");
+
+        //修改  
+        // users.set("a","12");
+
+        // //删除
+        // users.delete("b");
+
+        // //获取  
+        // console.log("value值",users.get("c"));
+
+        // //判断map集合中是否有某一个值
+        // console.log(users.has("c"));
+
+        // //清空  
+        // users.clear();
+
+        //size 所有元素的个数  
+        // console.log(users.size);
+        // console.log(users);
+
+        //遍历map集合
+            //for of遍历  +   keys   获取所有的key值 
+            // console.log(users.keys())
+            // for(let x of users.keys()){
+            //     console.log(users.get(x));
+            // }
+            // values  
+
+            for(let y of users.values()){
+                console.log(y);
+            }
+
+            //foreach  a ->  value    b -> key   
+            users.forEach((a,b)=>console.log(a,b));
+            
+    </script>
+</body>
+</html>
