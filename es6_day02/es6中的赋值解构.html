@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+    
+        //es6  赋值  
+        // let a = "abc";
+
+        //新增了很多类型的赋值    
+        // let b = [1,2,3,4,5];
+
+        // let c = b[1];
+
+        //数组赋值解构  
+            //情景一
+            // let [a,b,c] = [1,2,3,4,5];
+            // console.log(a,b,c);
+            //情景二 ...  剩余部分   
+            // let [a,b,...c] = [1,2,3,4,5];
+            // console.log(a,b,c);
+
+        //对象的赋值解构
+            //情景一    
+            //注意  对象解构赋值  以  属性名来匹配值     数组解构赋值   以元素的位置来匹配
+            //   变量名要和  对象的属性名相同
+        //    let {age} = {name:"zhou",age:18};
+
+        //     console.log(age);
+
+            //情景二   使用自己定义的变量来匹配对象中的值 
+            // let {name:a,age:b} = {name:"zhouer",age:19};
+            // console.log(a,b);
+
+            //情景三   对象的嵌套赋值解构  
+            const obj = {
+                name:"周",
+                age:19,
+                eat:[
+                    'hello',
+                    "es6"
+                ]
+            }
+
+            let {name:a,age:b,eat:[c,d]} = obj;
+
+            console.log(c,d);
+
+    
+    </script>
+</body>
+</html>
